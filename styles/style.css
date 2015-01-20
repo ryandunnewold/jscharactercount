@@ -1,0 +1,56 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+  #wrapper #container {
+    width: 1200px;
+    margin: 0 auto; }
+  #wrapper #login-container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    #wrapper #login-container #login-form {
+      width: 300px; }
+      #wrapper #login-container #login-form input[type='text'], #wrapper #login-container #login-form input[type='password'] {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        font-size: 20px; }
+      #wrapper #login-container #login-form input[type='submit'] {
+        background: #222;
+        box-sizing: border-box;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 2px;
+        border: none;
+        display: block;
+        margin: 8px 0;
+        width: 100%;
+        font-size: 20px; }
+        #wrapper #login-container #login-form input[type='submit']:hover {
+          background: #0e0e0e; }
+
+/*# sourceMappingURL=style.css.map */

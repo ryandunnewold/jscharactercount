@@ -1,0 +1,104 @@
+// Mixins
+
+@mixin flex-center {
+  @include flex;
+  @include flex-justify(center);
+  @include flex-align-items(center);
+}
+
+@mixin flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-align-items($position) {
+  -webkit-box-align: $position; 
+  -moz-box-align: $position;
+  -ms-flex-align: $position;
+  -webkit-align-items: $position;
+  align-items: $position;  
+}
+
+@mixin flex-align($position) {
+  -webkit-align-content: $position;  
+  align-content: $position;  
+}
+
+@mixin flex-justify($position) {
+  -webkit-box-pack: $position;
+  -moz-box-pack: $position;
+  -ms-flex-pack: $position;
+  -webkit-justify-content: $position;
+  justify-content: $position;
+}
+
+@mixin flex-flow($flow){
+  -webkit-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin button($color) {
+  background: $color;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: none;
+  display: block;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 20px;
+  &:hover {
+    background: darken($color, 8%);
+  }
+}
+
+// Variables
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  #container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #login-container {
+    width: 100%;
+    height: 100%;
+    @include flex-center;
+    #login-form {
+      width: 300px;
+      input[type='text'], input[type='password'] {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        font-size: 20px;
+      }
+      input[type='submit'] {
+        @include button(#222);
+      }
+    }
+  }
+}
