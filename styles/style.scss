@@ -15,16 +15,16 @@
 }
 
 @mixin flex-align-items($position) {
-  -webkit-box-align: $position; 
+  -webkit-box-align: $position;
   -moz-box-align: $position;
   -ms-flex-align: $position;
   -webkit-align-items: $position;
-  align-items: $position;  
+  align-items: $position;
 }
 
 @mixin flex-align($position) {
-  -webkit-align-content: $position;  
-  align-content: $position;  
+  -webkit-align-content: $position;
+  align-content: $position;
 }
 
 @mixin flex-justify($position) {
@@ -147,7 +147,7 @@ html, body {
           text-decoration: none;
           color: #222;
           display: block;
-          [class^="icon-"] {
+          .icon {
             display: block;
             box-sizing: border-box;
             background: rgb(0, 172, 237);
@@ -164,11 +164,11 @@ html, body {
               opacity: 1;
             }
           }
-          .icon-twitter {
+          .ion-social-twitter {
             background: rgb(0, 172, 237);
           }
-          .icon-website {
-            background: rgb(51, 204, 153);
+          .ion-social-github {
+            background: #333;
           }
         }
       }

@@ -95,7 +95,7 @@ html, body {
           text-decoration: none;
           color: #222;
           display: block; }
-          #wrapper #text-report #text-data #social-icons a [class^="icon-"] {
+          #wrapper #text-report #text-data #social-icons a .icon {
             display: block;
             box-sizing: border-box;
             background: #00aced;
@@ -122,12 +122,12 @@ html, body {
             font-size: 24px;
             opacity: .8;
             transition: opacity 50ms ease-in-out; }
-            #wrapper #text-report #text-data #social-icons a [class^="icon-"]:hover {
+            #wrapper #text-report #text-data #social-icons a .icon:hover {
               opacity: 1; }
-          #wrapper #text-report #text-data #social-icons a .icon-twitter {
+          #wrapper #text-report #text-data #social-icons a .ion-social-twitter {
             background: #00aced; }
-          #wrapper #text-report #text-data #social-icons a .icon-website {
-            background: #33cc99; }
+          #wrapper #text-report #text-data #social-icons a .ion-social-github {
+            background: #333; }
 
 @media screen and (max-width: 599px) {
   #wrapper #character-container {
